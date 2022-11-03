@@ -1,0 +1,38 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/config.h:6[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/ros_node.h:1[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:[m[K In member function ‘[01m[Kvoid ros_node::run()[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kprint(NULL, void*&, ros::console::Level&, const char [80], int, const char [21], mavros_msgs::State_<std::allocator<void> >::_mode_type&)[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;31m[K)[m[K
+      |                                                                                                                                                                                [01;31m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:246:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  246 |   { [01;36m[KROS_INFO[m[K(current_state.mode);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:161:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)[m[K’
+  161 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:163:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 7 from ‘[01m[Kmavros_msgs::State_<std::allocator<void> >::_mode_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+  163 |     const char* function, [01;36m[Kconst char* fmt[m[K, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:165:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const stringstream&, const char*, int, const char*)[m[K’
+  165 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:166:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kconst char [80][m[K’ to ‘[01m[Kconst stringstream&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_stringstream<char>&[m[K’}
+  166 |     [01;36m[Kconst std::stringstream& str[m[K, const char* file, int line, const char* function);
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/TrajectoryPlanner.dir/build.make:63：CMakeFiles/TrajectoryPlanner.dir/src/ros_node.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:249：CMakeFiles/TrajectoryPlanner.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

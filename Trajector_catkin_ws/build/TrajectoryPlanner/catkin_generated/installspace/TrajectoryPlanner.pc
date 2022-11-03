@@ -1,0 +1,8 @@
+prefix=/home/guocp/git_test/Trajector_catkin_ws/install
+
+Name: TrajectoryPlanner
+Description: Description of TrajectoryPlanner
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

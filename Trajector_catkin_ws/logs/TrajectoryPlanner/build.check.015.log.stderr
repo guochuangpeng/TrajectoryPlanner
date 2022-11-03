@@ -1,0 +1,15 @@
+[33mWARNING: Package name "TrajectoryPlanner" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.[0m
+[33m[1mCMake Warning[0m at /home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/CMakeLists.txt:142 (add_executable):
+  Cannot generate a safe runtime search path for target TrajectoryPlanner
+  because there is a cycle in the constraint graph:
+
+    dir 0 is [/opt/ros/noetic/lib]
+    dir 1 is [/home/guocp/下载/opencv-4.5.1/build/lib]
+      dir 2 must precede it due to runtime library [libopencv_gapi.so.4.5]
+    dir 2 is [/usr/local/lib]
+      dir 0 must precede it due to runtime library [libcv_bridge.so]
+      dir 1 must precede it due to runtime library [libopencv_calib3d.so.4.5]
+
+  Some of these libraries may not be found correctly.
+
+

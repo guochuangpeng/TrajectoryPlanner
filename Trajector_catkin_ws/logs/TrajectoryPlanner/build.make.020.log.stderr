@@ -1,0 +1,14 @@
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/ros_node.h:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koffb_set_mode[m[K’ does not name a type
+   50 |     [01;31m[Koffb_set_mode[m[K.request.custom_mode = "OFFBOARD";
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/ros_node.h:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_cmd[m[K’ does not name a type
+   53 |     [01;31m[Karm_cmd[m[K.request.value = true;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:[m[K In member function ‘[01m[Kvoid ros_node::run()[m[K’:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:241:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_request[m[K’ was not declared in this scope
+  241 |     mavros_msgs::CommandBool arm[01;31m[K_cmd;[m[K
+      |                                 [01;31m[K^~~~~[m[K       
+make[2]: *** [CMakeFiles/TrajectoryPlanner.dir/build.make:63：CMakeFiles/TrajectoryPlanner.dir/src/ros_node.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:249：CMakeFiles/TrajectoryPlanner.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

@@ -3,19 +3,28 @@
 ros_node::ros_node()
 {
   ros::NodeHandle nh_private("~");
-  odom_sub = nh_private.subscribe("/airsim_node/drone_1/odom_local_ned", 1, &ros_node::odom_cb, this);
-  airsim_anglerate_frame_pub_ = nh_private.advertise<airsim_ros_pkgs::AngleRateThrottle>("/airsim_node/drone_1/angle_rate_throttle_frame", 1);
+  odom_sub = nh_private.subscribe("/mavros/odometry/in", 1, &ros_node::odom_cb, this);
+  //airsim_anglerate_frame_pub_ = nh_private.advertise<airsim_ros_pkgs::AngleRateThrottle>("/airsim_node/drone_1/angle_rate_throttle_frame", 1);
   error_pose_publisher = nh_private.advertise<geometry_msgs::Point>("/error_pose_for_plot", 1);
   error_vel_publisher = nh_private.advertise<geometry_msgs::Point>("/error_vel_for_plot", 1);
   path_desire_pub = nh_private.advertise<nav_msgs::Path>("/path_desire", 1);
   path_real_pub = nh_private.advertise<nav_msgs::Path>("/path_real", 1);
-  client_takeoff = nh_private.serviceClient<airsim_ros_pkgs::Takeoff>("/airsim_node/drone_1/takeoff");
+  local_pos_pub = nh_private.advertise<geometry_msgs::PoseStamped>
+            ("/mavros/setpoint_position/local", 10);
+
+  arming_client = nh_private.serviceClient<mavros_msgs::CommandBool>
+            ("/mavros/cmd/arming");
+  set_mode_client = nh_private.serviceClient<mavros_msgs::SetMode>
+            ("/mavros/set_mode");
+  state_sub = nh_private.subscribe<mavros_msgs::State>
+            ("/mavros/state", 10, &ros_node::state_cb,this);
+ // client_takeoff = nh_private.serviceClient<airsim_ros_pkgs::Takeoff>("/airsim_node/drone_1/takeoff");
   // client_land = nh_private.serviceClient<airsim_ros_pkgs::Takeoff>("/airsim_node/drone_1/land");
 
-  left_sub = new message_filters::Subscriber<sensor_msgs::Image>(nh_private, "/airsim_node/drone_1/front_left/Scene", 1);
-  right_sub = new message_filters::Subscriber<sensor_msgs::Image>(nh_private, "/airsim_node/drone_1/front_right/Scene", 1);
-  sync = new message_filters::Synchronizer<sync_pol>(sync_pol(10), *left_sub, *right_sub);
-  sync->registerCallback(boost::bind(&camera_set::GrabStereo, &camera_set1, _1, _2));
+  //left_sub = new message_filters::Subscriber<sensor_msgs::Image>(nh_private, "/airsim_node/drone_1/front_left/Scene", 1);
+  //right_sub = new message_filters::Subscriber<sensor_msgs::Image>(nh_private, "/airsim_node/drone_1/front_right/Scene", 1);
+ // sync = new message_filters::Synchronizer<sync_pol>(sync_pol(10), *left_sub, *right_sub);
+ // sync->registerCallback(boost::bind(&camera_set::GrabStereo, &camera_set1, _1, _2));
 
   // get param
   double kp_pos_h, kp_vel_h, ki_vel_h, kd_vel_h;
@@ -222,15 +231,52 @@ void ros_node::run()
   static float timer = 0, total_time;
   float yaw_desire;
 
-  airsim_ros_pkgs::Takeoff takeoff;
-  client_takeoff.call(takeoff);
+  // airsim_ros_pkgs::Takeoff takeoff;
+  // client_takeoff.call(takeoff);
 
   nav_msgs::Path path_desire, path_real;
   path_desire.header.frame_id = "world";
   path_real.header.frame_id = "world";
 
+  mavros_msgs::SetMode offb_set_mode;
+  offb_set_mode.request.custom_mode = "OFFBOARD";
+
+  mavros_msgs::CommandBool arm_cmd;
+  arm_cmd.request.value = true;
+  ros::Time last_request = ros::Time::now();
+
+  geometry_msgs::PoseStamped pose;
+    pose.pose.position.x = 0;
+    pose.pose.position.y = 0;
+    pose.pose.position.z = 2;
+
+    //send a few setpoints before starting
+    // for(int i = 100; ros::ok() && i > 0; --i){
+    //     local_pos_pub.publish(pose);
+    //     ros::spinOnce();
+        
+    // }
+
   while (ros::ok())
-  {
+  { 
+    if( current_state.mode != "OFFBOARD"){
+            if( set_mode_client.call(offb_set_mode) &&
+                offb_set_mode.response.mode_sent){
+                //ROS_INFO("Offboard enabled");
+            }
+            last_request = ros::Time::now();
+        } else {
+            if( !current_state.armed){
+                if( arming_client.call(arm_cmd) &&
+                    arm_cmd.response.success){
+                   // ROS_INFO("Vehicle armed");
+                }
+                last_request = ros::Time::now();
+            }
+        }
+
+  
+
     if (set_param_flag) {
       go_to(debug_pos_desire, Eigen::Vector3d(0, 0, 0), Eigen::Vector3d(0, 0, 0), 0.0);
       // plot
@@ -243,13 +289,17 @@ void ros_node::run()
       error.y = controller1.error_vel_h(1);
       error.z = controller1.error_vel_z;
       error_vel_publisher.publish(error);
-    } else {
+
+      
+    } 
+    else {
       if (timer == 0) {
           total_time = minJerkTraj.getTotalDuration();
           ROS_INFO("total time:%.2fs", total_time);
       }
       if (timer <= total_time) {
           timer += 0.01;
+        
           pos_desire = minJerkTraj.getPos(timer);
           vel_desire = minJerkTraj.getVel(timer);
           acc_desire = minJerkTraj.getAcc(timer);
@@ -282,6 +332,13 @@ void ros_node::run()
           pose.pose.position.z = curr_pos(2);
           path_real.poses.push_back(pose);
           path_real_pub.publish(path_real);
+
+          pose.pose.position.x = pos_desire(0);
+          pose.pose.position.y = pos_desire(1);
+          pose.pose.position.z = pos_desire(2);
+           local_pos_pub.publish(pose);
+
+          
       } else {
           go_to(pos_desire, vel_desire, acc_desire, yaw_desire);
       }
@@ -301,13 +358,17 @@ void ros_node::go_to(Eigen::Vector3d pos_desire, Eigen::Vector3d vel_desire, Eig
   // cal
   M = controller1.PID(pos_desire_XYZYaw, vel_desire, acc_desire, curr_position_, linear_vel_feedback, curr_pose);
   rpyt << M[0], M[1], M[2], M[3];
+  //cout<<"rpyt"<<rpyt<<endl;
   // set
-  airsim_ros_pkgs::AngleRateThrottle anglerate;
-  anglerate.rollRate = rpyt(0, 0);
-  anglerate.pitchRate = rpyt(1, 0);
-  anglerate.yawRate = rpyt(2, 0);
-  anglerate.throttle = rpyt(3, 0);
-  airsim_anglerate_frame_pub_.publish(anglerate);
+//   airsim_ros_pkgs::AngleRateThrottle anglerate;
+//   anglerate.rollRate = rpyt(0, 0);
+//   anglerate.pitchRate = rpyt(1, 0);
+//   anglerate.yawRate = rpyt(2, 0);
+//   anglerate.throttle = rpyt(3, 0);
+//   airsim_anglerate_frame_pub_.publish(anglerate);
+}
+void ros_node::state_cb(const mavros_msgs::State::ConstPtr& msg){
+    current_state = *msg;
 }
 
 int main(int argc, char **argv)

@@ -1,7 +1,7 @@
 <launch>
-    <node pkg="stereo_though_circle" type="stereo_though_circle" name="stereo_though_circle" output="screen">
-        <rosparam file="$(find stereo_though_circle)/launch/config.yaml"/>
+    <node pkg="TrajectoryPlanner" type="TrajectoryPlanner" name="TrajectoryPlanner" output="screen">
+        <rosparam file="$(find TrajectoryPlanner)/launch/config.yaml"/>
     </node>
     <!-- <node pkg="rqt_plot" type="rqt_plot" output="screen" name="rqt_plot" args="/error_pose_for_plot /error_vel_for_plot"/> -->
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find stereo_though_circle)/launch/showpath.rviz" required="true"/>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find TrajectoryPlanner)/launch/showpath.rviz" required="true"/>
 </launch>

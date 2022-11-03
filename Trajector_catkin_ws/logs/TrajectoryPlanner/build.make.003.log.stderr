@@ -1,0 +1,58 @@
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:[m[K In member function ‘[01m[Kvoid camera_set::GrabStereo(const ImageConstPtr&, const ImageConstPtr&)[m[K’:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   68 |     [01;31m[Kcv_bridge[m[K::CvImageConstPtr cv_ptrLeft;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrLeft[m[K’ was not declared in this scope
+   71 |         [01;31m[Kcv_ptrLeft[m[K = cv_bridge::toCvShare(msgLeft);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:71:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   71 |         cv_ptrLeft = [01;31m[Kcv_bridge[m[K::toCvShare(msgLeft);
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ does not name a type
+   73 |     catch ([01;31m[Kcv_bridge[m[K::Exception &e)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:33:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   73 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   73 |     catch [34m[K([m[Kcv_bridge::Exception[01;31m[K [m[K[32m[K&[m[Ke)
+      |           [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                [32m[K)[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+   73 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ke[m[K’ was not declared in this scope
+   73 |     catch (cv_bridge::Exception &[01;31m[Ke[m[K)
+      |                                  [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   79 |     [01;31m[Kcv_bridge[m[K::CvImageConstPtr cv_ptrRight;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrRight[m[K’ was not declared in this scope
+   82 |         [01;31m[Kcv_ptrRight[m[K = cv_bridge::toCvShare(msgRight);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:82:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   82 |         cv_ptrRight = [01;31m[Kcv_bridge[m[K::toCvShare(msgRight);
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ does not name a type
+   84 |     catch ([01;31m[Kcv_bridge[m[K::Exception &e)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:33:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   84 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   84 |     catch [34m[K([m[Kcv_bridge::Exception[01;31m[K [m[K[32m[K&[m[Ke)
+      |           [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                [32m[K)[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+   84 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:90:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrLeft[m[K’ was not declared in this scope
+   90 |     imLeft_raw = [01;31m[Kcv_ptrLeft[m[K->image;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:91:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrRight[m[K’ was not declared in this scope
+   91 |     imRight_raw = [01;31m[Kcv_ptrRight[m[K->image;
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/TrajectoryPlanner.dir/build.make:76：CMakeFiles/TrajectoryPlanner.dir/src/camera_set.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:1002：CMakeFiles/TrajectoryPlanner.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

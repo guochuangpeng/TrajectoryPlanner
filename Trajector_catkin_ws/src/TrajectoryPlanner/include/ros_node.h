@@ -16,6 +16,12 @@ private:
     ros::Publisher airsim_anglerate_frame_pub_;
     ros::ServiceClient client_takeoff;
     ros::ServiceClient client_land;
+
+    ros::Subscriber state_sub ;
+    ros::ServiceClient arming_client;
+     ros::ServiceClient set_mode_client;
+     ros::Publisher local_pos_pub;
+
     typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, sensor_msgs::Image> sync_pol;
     message_filters::Subscriber<sensor_msgs::Image> *left_sub; // topic2 输入
     message_filters::Subscriber<sensor_msgs::Image> *right_sub;
@@ -39,6 +45,9 @@ private:
     Eigen::VectorXd ts;
     double delay;
     int circle_map[7] = {1, 2, 3, 4, 6, 7, 8};
+
+    mavros_msgs::State current_state;
+    
     // path_planner planner;
 
 public:
@@ -56,4 +65,5 @@ public:
     void run();
     void get_path();
     void go_to(Eigen::Vector3d pos_desire, Eigen::Vector3d vel_desire, Eigen::Vector3d acc_desire, double yaw_desire);
+    void state_cb(const mavros_msgs::State::ConstPtr& msg);
 };

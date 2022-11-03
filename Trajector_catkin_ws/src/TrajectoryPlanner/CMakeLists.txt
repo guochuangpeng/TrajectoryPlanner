@@ -17,6 +17,7 @@ cv_bridge
   nav_msgs
   sensor_msgs
   message_filters
+  mavros_msgs
  # nlink_parse
 )
 #find_package( Sophus REQUIRED )

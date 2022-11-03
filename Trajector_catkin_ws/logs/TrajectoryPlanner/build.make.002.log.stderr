@@ -1,0 +1,264 @@
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/controller.h:1[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/controller.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/config.h:29:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ is not a namespace-name
+   29 | using namespace [01;31m[Kcv[m[K;
+      |                 [01;31m[K^~[m[K
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:1[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/config.h:29:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ is not a namespace-name
+   29 | using namespace [01;31m[Kcv[m[K;
+      |                 [01;31m[K^~[m[K
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type
+   13 |     [01;31m[Kcv[m[K::Mat imLeft_out, imRight_out;
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type
+   14 |     [01;31m[Kcv[m[K::Mat imLeft_raw, imRight_raw;
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type
+   15 |     [01;31m[Kcv[m[K::Mat imLeft_tmp, imRight_tmp;
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:16:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3f[m[K’ was not declared in this scope
+   16 |     vector<[01;31m[KVec3f[m[K> circles_right;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:16:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 |     vector<Vec3f[01;31m[K>[m[K circles_right;
+      |                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:16:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:17:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3f[m[K’ was not declared in this scope
+   17 |     vector<[01;31m[KVec3f[m[K> circles_left;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:17:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   17 |     vector<Vec3f[01;31m[K>[m[K circles_left;
+      |                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:17:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/ros_node.h:1[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/config.h:29:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ is not a namespace-name
+   29 | using namespace [01;31m[Kcv[m[K;
+      |                 [01;31m[K^~[m[K
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/ros_node.h:2[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/ros_node.cpp:1[m[K:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:13:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type
+   13 |     [01;31m[Kcv[m[K::Mat imLeft_out, imRight_out;
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type
+   14 |     [01;31m[Kcv[m[K::Mat imLeft_raw, imRight_raw;
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type
+   15 |     [01;31m[Kcv[m[K::Mat imLeft_tmp, imRight_tmp;
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:16:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3f[m[K’ was not declared in this scope
+   16 |     vector<[01;31m[KVec3f[m[K> circles_right;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:16:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 |     vector<Vec3f[01;31m[K>[m[K circles_right;
+      |                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:16:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:17:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVec3f[m[K’ was not declared in this scope
+   17 |     vector<[01;31m[KVec3f[m[K> circles_left;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:17:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   17 |     vector<Vec3f[01;31m[K>[m[K circles_left;
+      |                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:17:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:[m[K In member function ‘[01m[Kvoid camera_set::GrabStereo(const ImageConstPtr&, const ImageConstPtr&)[m[K’:
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:66:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K((camera_set*)this)->camera_set::circles_left[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   66 |     circles_left.[01;31m[Kresize[m[K(100);
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:67:19:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kresize[m[K’ in ‘[01m[K((camera_set*)this)->camera_set::circles_right[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   67 |     circles_right.[01;31m[Kresize[m[K(100);
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   68 |     [01;31m[Kcv_bridge[m[K::CvImageConstPtr cv_ptrLeft;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrLeft[m[K’ was not declared in this scope
+   71 |         [01;31m[Kcv_ptrLeft[m[K = cv_bridge::toCvShare(msgLeft);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:71:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   71 |         cv_ptrLeft = [01;31m[Kcv_bridge[m[K::toCvShare(msgLeft);
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ does not name a type
+   73 |     catch ([01;31m[Kcv_bridge[m[K::Exception &e)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:33:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   73 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   73 |     catch [34m[K([m[Kcv_bridge::Exception[01;31m[K [m[K[32m[K&[m[Ke)
+      |           [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                [32m[K)[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+   73 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:73:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ke[m[K’ was not declared in this scope
+   73 |     catch (cv_bridge::Exception &[01;31m[Ke[m[K)
+      |                                  [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   79 |     [01;31m[Kcv_bridge[m[K::CvImageConstPtr cv_ptrRight;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrRight[m[K’ was not declared in this scope
+   82 |         [01;31m[Kcv_ptrRight[m[K = cv_bridge::toCvShare(msgRight);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:82:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ has not been declared
+   82 |         cv_ptrRight = [01;31m[Kcv_bridge[m[K::toCvShare(msgRight);
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_bridge[m[K’ does not name a type
+   84 |     catch ([01;31m[Kcv_bridge[m[K::Exception &e)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:33:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   84 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   84 |     catch [34m[K([m[Kcv_bridge::Exception[01;31m[K [m[K[32m[K&[m[Ke)
+      |           [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                [32m[K)[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:84:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+   84 |     catch (cv_bridge::Exception [01;31m[K&[m[Ke)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[KimLeft_raw[m[K’ was not declared in this scope
+   90 |     [01;31m[KimLeft_raw[m[K = cv_ptrLeft->image;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:90:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrLeft[m[K’ was not declared in this scope
+   90 |     imLeft_raw = [01;31m[Kcv_ptrLeft[m[K->image;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[KimRight_raw[m[K’ was not declared in this scope
+   91 |     [01;31m[KimRight_raw[m[K = cv_ptrRight->image;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:91:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptrRight[m[K’ was not declared in this scope
+   91 |     imRight_raw = [01;31m[Kcv_ptrRight[m[K->image;
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+   97 |     [01;31m[Kcv[m[K::Mat channel_left[3];
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+   98 |     [01;31m[Kcv[m[K::Mat channel_right[3];
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:99:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kchannel_left[m[K’ was not declared in this scope
+   99 |     split(imLeft_raw, [01;31m[Kchannel_left[m[K);
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:99:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksplit[m[K’ was not declared in this scope
+   99 |     [01;31m[Ksplit[m[K(imLeft_raw, channel_left);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:104:28:[m[K [01;31m[Kerror: [m[K‘[01m[KimLeft_tmp[m[K’ was not declared in this scope
+  104 |     channel_left[2].copyTo([01;31m[KimLeft_tmp[m[K);
+      |                            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:105:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kchannel_right[m[K’ was not declared in this scope
+  105 |     split(imRight_raw, [01;31m[Kchannel_right[m[K);
+      |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:110:29:[m[K [01;31m[Kerror: [m[K‘[01m[KimRight_tmp[m[K’ was not declared in this scope
+  110 |     channel_right[2].copyTo([01;31m[KimRight_tmp[m[K);
+      |                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:112:42:[m[K [01;31m[Kerror: [m[K‘[01m[KSize[m[K’ was not declared in this scope
+  112 |     GaussianBlur(imLeft_tmp, imLeft_tmp, [01;31m[KSize[m[K(9, 9), 2, 2);
+      |                                          [01;31m[K^~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGaussianBlur[m[K’ was not declared in this scope
+  112 |     [01;31m[KGaussianBlur[m[K(imLeft_tmp, imLeft_tmp, Size(9, 9), 2, 2);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:115:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+  115 |     [01;31m[Kcv[m[K::threshold(imLeft_tmp, imLeft_tmp, 125, 255, cv::THRESH_BINARY_INV);
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:115:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+  115 |     cv::threshold(imLeft_tmp, imLeft_tmp, 125, 255, [01;31m[Kcv[m[K::THRESH_BINARY_INV);
+      |                                                     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:116:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+  116 |     [01;31m[Kcv[m[K::threshold(imRight_tmp, imRight_tmp, 125, 255, cv::THRESH_BINARY_INV);
+      |     [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:116:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+  116 |     cv::threshold(imRight_tmp, imRight_tmp, 125, 255, [01;31m[Kcv[m[K::THRESH_BINARY_INV);
+      |                                                       [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:118:29:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope
+  118 |     std::vector<std::vector<[01;31m[KPoint[m[K>> contours_left;
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:118:29:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/noetic/include/geometry_msgs/PointStamped.h:19[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_datatypes.h:36[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/config.h:16[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:1[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/geometry_msgs/Point.h:58:56:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::Point[m[K’
+   58 | typedef ::geometry_msgs::Point_<std::allocator<void> > [01;36m[KPoint[m[K;
+      |                                                        [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/config.h:16[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/camera_set.h:1[m[K,
+                 from [01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/tf/transform_datatypes.h:49:21:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf::Point[m[K’
+   49 | typedef tf::Vector3 [01;36m[KPoint[m[K;
+      |                     [01;36m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:118:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  118 |     std::vector<std::vector<[01;31m[KPoint[m[K>> contours_left;
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:118:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:118:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  118 |     std::vector<std::vector<Point[01;31m[K>>[m[K contours_left;
+      |                                  [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:118:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:119:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  119 |     std::vector<std::vector<[01;31m[KPoint[m[K>> contours_right;
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:119:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  119 |     std::vector<std::vector<Point[01;31m[K>>[m[K contours_right;
+      |                                  [01;31m[K^~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:119:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:120:45:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_RETR_LIST[m[K’ was not declared in this scope
+  120 |     findContours(imLeft_tmp, contours_left, [01;31m[KCV_RETR_LIST[m[K, CV_CHAIN_APPROX_NONE);
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:120:59:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_CHAIN_APPROX_NONE[m[K’ was not declared in this scope
+  120 |     findContours(imLeft_tmp, contours_left, CV_RETR_LIST, [01;31m[KCV_CHAIN_APPROX_NONE[m[K);
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:120:5:[m[K [01;31m[Kerror: [m[K‘[01m[KfindContours[m[K’ was not declared in this scope
+  120 |     [01;31m[KfindContours[m[K(imLeft_tmp, contours_left, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:124:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kcontours_left[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  124 |     idex_left = contours_left.[01;31m[Ksize[m[K() - 2;
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:125:33:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kcontours_right[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  125 |     idex_right = contours_right.[01;31m[Ksize[m[K() - 2;
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:127:48:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  127 |     size_t count_left = contours_left[idex_left[01;31m[K][m[K.size();
+      |                                                [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:128:51:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  128 |     size_t count_right = contours_right[idex_right[01;31m[K][m[K.size();
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:130:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ was not declared in this scope
+  130 |     [01;31m[KMat[m[K pointsf_left, pointsf_right;
+      |     [01;31m[K^~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:131:32:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  131 |     Mat(contours_left[idex_left[01;31m[K][m[K).convertTo(pointsf_left, CV_32F);
+      |                                [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:131:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kpointsf_left[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_left[m[K’?
+  131 |     Mat(contours_left[idex_left]).convertTo([01;31m[Kpointsf_left[m[K, CV_32F);
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+      |                                             [32m[Kcount_left[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:131:59:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_32F[m[K’ was not declared in this scope
+  131 |     Mat(contours_left[idex_left]).convertTo(pointsf_left, [01;31m[KCV_32F[m[K);
+      |                                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:132:34:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  132 |     Mat(contours_right[idex_right[01;31m[K][m[K).convertTo(pointsf_right, CV_32F);
+      |                                  [01;31m[K^[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:132:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kpointsf_right[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_right[m[K’?
+  132 |     Mat(contours_right[idex_right]).convertTo([01;31m[Kpointsf_right[m[K, CV_32F);
+      |                                               [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                               [32m[Kcount_right[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRotatedRect[m[K’ was not declared in this scope
+  133 |     [01;31m[KRotatedRect[m[K box_left = fitEllipse(pointsf_left);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:134:16:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kbox_right[m[K’
+  134 |     RotatedRect[01;31m[K [m[K[32m[Kbox_right[m[K = fitEllipse(pointsf_right);
+      |                [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+      |                [32m[K;[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:145:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kbox_left[m[K’ was not declared in this scope; did you mean ‘[01m[Kidex_left[m[K’?
+  145 |     double depth = get_depth([01;31m[Kbox_left[m[K.center.x, box_right.center.x);
+      |                              [01;31m[K^~~~~~~~[m[K
+      |                              [32m[Kidex_left[m[K
+[01m[K/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/src/camera_set.cpp:145:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kbox_right[m[K’ was not declared in this scope; did you mean ‘[01m[Kidex_right[m[K’?
+  145 |     double depth = get_depth(box_left.center.x, [01;31m[Kbox_right[m[K.center.x);
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                 [32m[Kidex_right[m[K
+make[2]: *** [CMakeFiles/TrajectoryPlanner.dir/build.make:89：CMakeFiles/TrajectoryPlanner.dir/src/controller.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[2]: *** [CMakeFiles/TrajectoryPlanner.dir/build.make:76：CMakeFiles/TrajectoryPlanner.dir/src/camera_set.cpp.o] 错误 1
+make[2]: *** [CMakeFiles/TrajectoryPlanner.dir/build.make:63：CMakeFiles/TrajectoryPlanner.dir/src/ros_node.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:1002：CMakeFiles/TrajectoryPlanner.dir/all] 错误 2
+make: *** [Makefile:141：all] 错误 2

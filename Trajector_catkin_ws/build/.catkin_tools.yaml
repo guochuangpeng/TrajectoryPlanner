@@ -1,0 +1,6 @@
+devel_space: /home/guocp/git_test/Trajector_catkin_ws/devel
+install: false
+install_space: /home/guocp/git_test/Trajector_catkin_ws/install
+profile: default
+source_space: /home/guocp/git_test/Trajector_catkin_ws/src
+workspace: /home/guocp/git_test/Trajector_catkin_ws
