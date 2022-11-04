@@ -573,6 +573,7 @@ CMakeFiles/TrajectoryPlanner.dir/src/ros_node.cpp.o
  /opt/ros/noetic/include/geometry_msgs/Transform.h
  /opt/ros/noetic/include/geometry_msgs/TransformStamped.h
  /opt/ros/noetic/include/geometry_msgs/Twist.h
+ /opt/ros/noetic/include/geometry_msgs/TwistStamped.h
  /opt/ros/noetic/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/noetic/include/geometry_msgs/Vector3.h
  /opt/ros/noetic/include/geometry_msgs/Vector3Stamped.h

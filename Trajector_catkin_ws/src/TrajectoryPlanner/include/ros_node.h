@@ -7,6 +7,7 @@
 #include "geometry_msgs/Point.h"
 #include "nav_msgs/Path.h"
 #include "geometry_msgs/PoseStamped.h"
+#include "geometry_msgs/TwistStamped.h"
 #include "planner.h"
 
 class ros_node
@@ -21,6 +22,7 @@ private:
     ros::ServiceClient arming_client;
      ros::ServiceClient set_mode_client;
      ros::Publisher local_pos_pub;
+     ros::Publisher local_vel_pub;
 
     typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, sensor_msgs::Image> sync_pol;
     message_filters::Subscriber<sensor_msgs::Image> *left_sub; // topic2 输入

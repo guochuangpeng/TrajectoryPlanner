@@ -93,6 +93,8 @@ nav_msgs/Path.h
 /home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/nav_msgs/Path.h
 geometry_msgs/PoseStamped.h
 /home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/geometry_msgs/PoseStamped.h
+geometry_msgs/TwistStamped.h
+/home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/geometry_msgs/TwistStamped.h
 planner.h
 /home/guocp/git_test/Trajector_catkin_ws/src/TrajectoryPlanner/include/planner.h
 
@@ -1376,6 +1378,26 @@ ros/message_operations.h
 geometry_msgs/Vector3.h
 -
 geometry_msgs/Vector3.h
+-
+
+/opt/ros/noetic/include/geometry_msgs/TwistStamped.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/Twist.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/TwistWithCovariance.h

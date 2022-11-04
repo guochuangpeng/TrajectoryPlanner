@@ -10,7 +10,9 @@ ros_node::ros_node()
   path_desire_pub = nh_private.advertise<nav_msgs::Path>("/path_desire", 1);
   path_real_pub = nh_private.advertise<nav_msgs::Path>("/path_real", 1);
   local_pos_pub = nh_private.advertise<geometry_msgs::PoseStamped>
-            ("/mavros/setpoint_position/local", 10);
+            ("/mavros/setpoint_position/local", 1000);
+  local_vel_pub = nh_private.advertise<geometry_msgs::TwistStamped>
+            ("/mavros/setpoint_velocity/cmd_vel", 10);          
 
   arming_client = nh_private.serviceClient<mavros_msgs::CommandBool>
             ("/mavros/cmd/arming");
@@ -250,6 +252,12 @@ void ros_node::run()
     pose.pose.position.y = 0;
     pose.pose.position.z = 2;
 
+
+  geometry_msgs::TwistStamped vel;
+  vel.twist.linear.x=0;
+  vel.twist.linear.y=0;
+  vel.twist.linear.z=0;
+    
     //send a few setpoints before starting
     // for(int i = 100; ros::ok() && i > 0; --i){
     //     local_pos_pub.publish(pose);
@@ -333,10 +341,15 @@ void ros_node::run()
           path_real.poses.push_back(pose);
           path_real_pub.publish(path_real);
 
-          pose.pose.position.x = pos_desire(0);
-          pose.pose.position.y = pos_desire(1);
-          pose.pose.position.z = pos_desire(2);
-           local_pos_pub.publish(pose);
+          vel.twist.linear.x=vel_desire(0);
+          vel.twist.linear.y=vel_desire(1);
+          vel.twist.linear.z=vel_desire(2);
+          local_vel_pub.publish(vel);
+
+          // pose.pose.position.x = pos_desire(0);
+          // pose.pose.position.y = pos_desire(1);
+          // pose.pose.position.z = pos_desire(2);
+          //  local_pos_pub.publish(pose);
 
           
       } else {
