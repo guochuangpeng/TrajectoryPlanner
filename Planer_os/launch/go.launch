@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="Planer_os" type="Planer_os" name="Planer_os" output="screen">
+        <rosparam file="$(find Planer_os)/launch/config.yaml"/>
+    </node>
+    <!-- <node pkg="rqt_plot" type="rqt_plot" output="screen" name="rqt_plot" args="/error_pose_for_plot /error_vel_for_plot"/> -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find Planer_os)/launch/showpath.rviz" required="true"/>
+</launch>
